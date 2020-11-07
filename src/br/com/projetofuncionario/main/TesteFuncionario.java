@@ -19,6 +19,8 @@ public class TesteFuncionario {
         listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
         listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
         listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
+        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
+        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
 
 
 
