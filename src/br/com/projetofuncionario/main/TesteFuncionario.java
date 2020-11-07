@@ -21,8 +21,6 @@ public class TesteFuncionario {
         listafuncionarios.add(new Funcionario("Leandro", 30, "98745-0", 2500.00));
         listafuncionarios.add(new Funcionario("Fellipe", 31, "88788-1", 2500.00));
         listafuncionarios.add(new Funcionario("Bruno", 32, "58977-2", 2500.00));
-        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 2500.00));
-        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 2500.00));
 
         ObjectOutputStream gerarArquivoFuncionario = new ObjectOutputStream(new FileOutputStream(fileName));
         gerarArquivoFuncionario.writeObject(listafuncionarios);
