@@ -14,13 +14,13 @@ public class TesteFuncionario {
 
         String fileName = "arquivoFuncionario.bin";
 
-        List<Funcionario> listafuncionarios = new ArrayList<>();
-        Locale.setDefault(Locale.forLanguageTag("pt-BR"));
-        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
-        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
-        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
-        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
-        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
+        List<Funcionario> listafuncionarios = new ArrayList<Funcionario>();
+
+        listafuncionarios.add(new Funcionario("Wellington", 35, "123456-5", 1800.00));
+        listafuncionarios.add(new Funcionario("Girdacio", 28, "78963-8", 1800.00));
+        listafuncionarios.add(new Funcionario("Leandro", 30, "98745-0", 1800.00));
+        listafuncionarios.add(new Funcionario("Fellipe", 31, "88788-1", 1800.00));
+        listafuncionarios.add(new Funcionario("Bruno", 32, "58977-2", 1800.00));
 
 
 
@@ -32,10 +32,10 @@ public class TesteFuncionario {
         List<Funcionario> funcionarioList = (List<Funcionario>) conversaoArquivoFuncionario.readObject();
         conversaoArquivoFuncionario.close();
 
-        Collections.sort(funcionarioList);
-
-
-        funcionarioList.forEach(funcionario -> {
+        Collections.sort(listafuncionarios);
+//
+//
+        listafuncionarios.forEach(funcionario -> {
             System.out.println("" + funcionario);
         });
 

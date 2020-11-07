@@ -1,6 +1,8 @@
 package br.com.projetofuncionario.dominio;
 
-public class Matricula {
+import java.io.Serializable;
+
+public class Matricula implements Serializable {
 
     private String matricula;
 

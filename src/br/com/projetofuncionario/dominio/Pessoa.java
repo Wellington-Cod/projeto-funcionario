@@ -1,9 +1,11 @@
 package br.com.projetofuncionario.dominio;
 
-public class Pessoa {
+import java.io.Serializable;
+
+public class Pessoa implements Serializable {
 
    private String nome;
-   protected int idade; //TODO fazer a conversão para Date
+   protected int idade; //TODO fazer a conversão para Date.
    private String cpf;
 
     public String getNome() {
