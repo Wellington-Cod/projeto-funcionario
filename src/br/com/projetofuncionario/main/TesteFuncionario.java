@@ -15,7 +15,7 @@ public class TesteFuncionario {
         String fileName = "arquivoFuncionario.bin";
 
         List<Funcionario> listafuncionarios = new ArrayList<>();
-        Locale.setDefault(Locale.forLanguageTag("pt-BR"));
+        Locale.setDefault(Locale.US);
         listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
         listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
         listafuncionarios.add(new Funcionario("Wellington", 35, "123456-0", 1800.00));
