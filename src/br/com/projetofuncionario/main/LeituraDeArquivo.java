@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-public class TesteFuncionario {
+public class LeituraDeArquivo {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 

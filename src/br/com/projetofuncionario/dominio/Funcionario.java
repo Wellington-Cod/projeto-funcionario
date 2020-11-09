@@ -1,13 +1,15 @@
 package br.com.projetofuncionario.dominio;
 
 import java.io.Serializable;
+import java.util.Objects;
 
-public class Funcionario extends Pessoa implements Serializable, Comparable <Funcionario> {
+public class Funcionario extends Pessoa implements Serializable, Comparable<Funcionario> {
 
     private double salario;
-    private  Matricula matricula;
+    private Matricula matricula;
 
-    public Funcionario( String  nome, int idade, String matricula, double salario) {
+
+    public Funcionario(String nome, int idade, String matricula, double salario) {
         this.setNome(nome);
         this.idade = idade;
         this.matricula = new Matricula(matricula);
@@ -17,9 +19,9 @@ public class Funcionario extends Pessoa implements Serializable, Comparable <Fun
     public Funcionario() {
     }
 
-
-
-
+    public Matricula getMatricula() {
+        return matricula;
+    }
 
     public int getIdade() {
         return idade;
@@ -29,20 +31,18 @@ public class Funcionario extends Pessoa implements Serializable, Comparable <Fun
         this.idade = idade;
     }
 
-    public Matricula getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(Matricula matricula) {
-        this.matricula = matricula;
-    }
-
     public double getSalario() {
         return salario;
     }
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = new Matricula(matricula);
+
+
     }
 
 
@@ -60,4 +60,8 @@ public class Funcionario extends Pessoa implements Serializable, Comparable <Fun
     public int compareTo(Funcionario outro) {
         return (this.idade - outro.idade);
     }
+
+
 }
+
+

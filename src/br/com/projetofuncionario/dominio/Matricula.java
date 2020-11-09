@@ -13,4 +13,9 @@ public class Matricula implements Serializable {
     public Matricula(String matricula) {
         this.matricula = matricula;
     }
+
+    @Override
+    public String toString() {
+        return matricula;
+    }
 }
