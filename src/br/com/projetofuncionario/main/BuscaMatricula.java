@@ -22,9 +22,10 @@ public class BuscaMatricula {
         gerenciadora.add(new Funcionario("Bruno", 32, "58977-2", 2500.00));
 
 
-        Funcionario funcionario = gerenciadora.buscaPorMatricula("88788");
-
-        System.out.println(funcionario);
+       // Funcionario funcionario = gerenciadora.buscaPorMatricula("88788");
+        Funcionario funcionarioNativo = gerenciadora.buscaPorMatriculaMetodoNativo("58977-2");
+       // System.out.println(funcionario);
+        System.out.println(funcionarioNativo);
 
 
 //        listafuncionarios.forEach(funcionario -> {
