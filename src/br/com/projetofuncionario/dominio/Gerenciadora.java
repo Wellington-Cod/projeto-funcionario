@@ -1,6 +1,5 @@
 package br.com.projetofuncionario.dominio;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +17,7 @@ public class Gerenciadora {
 
         return listaFuncionarios
                 .stream()
-                .filter(funcionario -> matricula.equals(funcionario.getMatricula().getMatricula()))
+                .filter(funcionario -> funcionario.getMatricula().equals(matricula))
                 .findFirst()
                // .orElse(new Funcionario("Funcionario Padrão", 0, "", 0));
                // .orElse(null);
